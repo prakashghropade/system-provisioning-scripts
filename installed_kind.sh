@@ -89,7 +89,4 @@ echo "Docker version: $(docker --version)"
 echo "kind version: $(kind --version)"
 echo "kubectl version: $(kubectl version --client)"
 # Installation completed
-echo "Installation of Docker, kind and kubectl completed successfully."
-
-sudo newgrp docker
-    
+echo "Installation of Docker, kind and kubectl completed successfully."    
