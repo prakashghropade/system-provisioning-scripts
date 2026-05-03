@@ -21,7 +21,6 @@ if ! command -v docker &>/dev/null; then
 
     echo "Adding the current user to docker group"
     sudo usermod -aG docker $USER
-    sudo newgrp docker
 
     echo "Docker installed successfully."
 else
@@ -84,4 +83,13 @@ else
     echo "kubectl is already installed."
 fi
 
+
+# confirming  the installation of docker, kind and kubectl
+echo "Docker version: $(docker --version)"
+echo "kind version: $(kind --version)"
+echo "kubectl version: $(kubectl version --client --short)"
+# Installation completed
+echo "Installation of Docker, kind and kubectl completed successfully."
+
+sudo newgrp docker
     
