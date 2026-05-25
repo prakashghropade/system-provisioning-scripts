@@ -38,6 +38,21 @@ echo " Installing Jenkins"
 echo "======================================="
 sudo apt install jenkins
 
+echo "============================================"
+echo " Starting Jenkins service..."
+echo "============================================"
+sudo systemctl start jenkins
+
+echo "============================================"
+echo " Enabling Jenkins on boot..."
+echo "============================================"
+sudo systemctl enable jenkins
+
+echo "============================================"
+echo " Checking Jenkins service status..."
+echo "============================================"
+sudo systemctl status jenkins --no-pager
+
 echo "======================================="
 echo " Jenkins Initial Admin Password"
 echo "======================================="
