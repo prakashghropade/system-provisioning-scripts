@@ -11,7 +11,7 @@ echo "=========================================="
 
 echo "[1/3] Creating EKS cluster..."
 eksctl create cluster --name=wanderlust \
-                    --region=ap-sout-1 \
+                    --region=ap-south-1 \
                     --version=1.30 \
                     --without-nodegroup
 echo "✓ EKS cluster created successfully."
